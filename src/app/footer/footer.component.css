@@ -1,0 +1,19 @@
+.footer{
+    background-color: black;
+    pad: 2.5rem;
+}
+.FChild{
+    /* justify-content-between alignItemCenter */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.grid{
+    display: grid;
+    color: gray;
+}
+.text-for{
+    text-align: center;
+    color: gray;
+}

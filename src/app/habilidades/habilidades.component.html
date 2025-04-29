@@ -1,0 +1,44 @@
+<div class="container wv m-b5">
+
+    <div class="habilidades p-4 pt-9">
+
+      <div id="habis" class="titulo text-center">
+        <h2 class="">Skills</h2>
+        <div class="line"></div>
+      </div>
+
+      <div>
+        
+        <div class="iconos flex justify-content-around text-center m-15">
+
+          <div class="icono" *ngFor="let dato of datosB">
+            <p class="fs-3 bold">{{dato.text1}}</p>
+            <p>{{dato.text2}}</p>
+          </div>
+
+        </div>
+        <div id="barras" class="barras">
+          @for (tecnologia of tecnologias; track tecnologia; ) {
+            <div class="barra">
+              <div class="progreso" [ngStyle]="{'width': tecnologia.valor + '%'}">
+                <span class="texto">{{ tecnologia.nombre.toUpperCase() }}</span>
+                <span class="porcentaje">{{ tecnologia.valor }}%</span>
+              </div>
+            </div>
+          }
+        </div>
+        <div>
+
+          <div class="verMas text-end">
+            <div>
+              <a href="#" class="verMasA p-2">View more...</a>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>

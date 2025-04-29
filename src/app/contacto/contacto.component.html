@@ -1,0 +1,29 @@
+<div class="contacto" id="contacto">
+
+    <div class="titulo text-center">
+      <h1 class="fs-1 bold mb-5">Contact me</h1>
+      <div class="line"></div>
+    </div>
+
+    <div class="text-center">
+      <p>Would you like to talk to me?</p>
+      <form id="formulario" class="container text-center" 
+
+        [formGroup]="aplicarForm" 
+        (submit)="submitApplication()">
+
+        <div>
+          <input class="input w-50 p-2 mb-2" id="nombre" type="text" placeholder="Name" formControlName="name" >
+        </div>
+        <div>
+          <input class=" input w-50 p-2 mb-2" id="email" type="email" placeholder="E-mail" formControlName="email">
+        </div>
+        <div>
+          <textarea class="input w-50 p-2 mb-2 h-70" placeholder="Message" id="mensaje" cols="30" rows="10" formControlName="message"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Send" class="input p-2">
+        </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,53 @@
+<header class="header1 bg-bluee">
+    <div>
+  
+      <div class="iconH">
+        <svg id="icon-move" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="190" height="190" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+          <line x1="12" y1="12" x2="20" y2="7.5" />
+          <line x1="12" y1="12" x2="12" y2="21" />
+          <line x1="12" y1="12" x2="4" y2="7.5" />
+        </svg>
+      </div>
+  
+      <div id="text-appear" class="titHeader">
+        <h1>César López</h1>
+        <p>{{tituloTrabajo}}</p>
+      </div>
+      <div id="text-appear2" class="text-appear2 flex">
+        @for (dato of datos; track dato) {
+          <div>
+            <p class="text1">{{dato.text1}}</p>
+            <p class="text2">{{dato.text2}}</p>
+          </div>
+        }
+
+      </div>
+  
+    </div>
+    <a href="#skills">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon arrow bg-white rounded-full  icon-tabler m-auto icon-tabler-arrow-bottom-circle" width='55' height='55' viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4f46e5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 7v14" />
+        <path d="M9 18l3 3l3 -3" />
+        <circle cx='12' cy='5' r='2' />
+      </svg>
+    </a>
+  </header>
+  
+  <app-habilidades id="skills"></app-habilidades>
+
+  <div >
+    <h1 class="text-center bold">My Projects</h1>
+
+    <div class="parent">
+      @for (showProjects of showProjectsList; track showProjects) {
+        <app-projects class="project" [showProjects]="showProjects"></app-projects>
+      }
+    </div>
+  </div>
+
+  <app-contacto></app-contacto>
+
+  <app-footer></app-footer>

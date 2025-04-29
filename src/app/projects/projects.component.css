@@ -1,0 +1,41 @@
+.titulo5{
+    font-size: large;
+    font-weight: normal;
+}
+.carta{
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 45%; */
+    padding: 15px;
+    border-radius: 2rem;
+    /* border: 2px solid lightblue; */
+    margin: 10px;
+    /* background-color: #e0f7fa; */
+  border: 4px solid;
+  border-image: linear-gradient(45deg, #4dd0e1, #ffffff, #b8141c) 1;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  animation: bordeAgua 3s infinite linear;
+}
+.carta>img{
+  max-height: 100px;
+}
+
+@keyframes bordeAgua {
+  0% {
+    border-image: linear-gradient(0deg, #4dd0e1, #ffffff, #b8141c) 1;
+  }
+  50% {
+    border-image: linear-gradient(180deg, #4dd0e1, #ffffff, #b8141c) 1;
+  }
+  100% {
+    border-image: linear-gradient(360deg, #4dd0e1, #ffffff, #b8141c) 1;
+  }
+}
+.a{
+    color: var(--azul);
+}
+.titulo5{
+    margin: 0;
+}

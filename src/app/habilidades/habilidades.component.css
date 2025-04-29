@@ -1,0 +1,70 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .barras{
+
+} */
+/* .barra:nth-child(odd) {
+    background-color: lightblue; 
+} */
+/* .barra{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(116, 205, 235);
+    margin: 1rem 15%;
+    padding: 1px 10%;
+    border-radius: 2rem;
+    align-items: center;
+    
+} */
+.barras {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .barra {
+    background-color: #e0f7fa;
+    border: 2px solid #4dd0e1;
+    border-radius: 2rem;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progreso {
+    height: 100%;
+    background: linear-gradient(135deg, #4dd0e1 20%, #00acc1 80%);
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: #000;
+    /* font-weight: bold; */
+    position: relative;
+    animation: agua 8s ease-in-out 0s infinite alternate both;
+    background-size: 200% 100%;
+  }
+  
+  .texto {
+    z-index: 1;
+  }
+  
+  .porcentaje {
+    z-index: 1;
+  }
+  
+  /* Efecto animado como agua */
+  @keyframes agua {
+    0% {
+      background-position: 200% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
